@@ -1,3 +1,19 @@
+button{
+width: 328px;
+cursor: pointer;
+padding: 20px 0;
+border-radius: 12px;
+border: 2px solid #6E3ABA;
+background-color: #6E3ABA;
+color: white;
+font-size: 18px;
+}
+
+button.secondry{
+    color: #6E3ABA;
+    background-color:white;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -53,4 +69,52 @@ h1{
     margin-top: 20px;
     margin-right: 101px;
     max-height: 37px;
+}
+
+#hello{
+    background-image: url('./img/html_css_js\ 1.png');
+    background-repeat: no-repeat;
+    background-position: top 121px right 58px;
+    background-size: 30vw;
+}
+
+.purplebg{
+    background-color:#6E3ABA;
+}
+
+section.purplebg{
+    text-align: center;
+    padding-top: calc(40px + (80 - 40) * ((100vw - 375px) / (1280 - 375)));
+    padding-bottom: calc(40px + (80 - 40) * ((100vw - 375px) / (1280 - 375)));
+}
+
+h3{
+    font-size: calc(34px + (52 - 34) * ((100vw - 375px) / (1280 - 375)));
+    
+    font-weight: 700;
+    line-height: 117%;
+    color:#ffffff;
+    text-transform: uppercase;
+}
+
+.timer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: calc(20px + (57 - 20) * ((100vw - 375px) / (1280 - 375)));
+    margin-bottom: calc(20px + (57 - 20) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.timerElen .value{
+    font-family: "Chava";
+    font-size: calc(60px + (174 - 60) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 107%;
+    color:#2F1D4E;
+}
+
+.timerElen .desc{
+  font-size: calc(10px + (27 - 10) * ((100vw - 375px) / (1280 - 375)));
+  font-weight: 500;
+  line-height: 118%;
+  color:#2F1D4E;
+  text-transform: uppercase;
 }
