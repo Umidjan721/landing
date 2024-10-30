@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "TT Hoves";
+}
+section{
+    padding: 37px 121px; 
+}
+.logo{
+    width: 200px;
+    margin-bottom: 85px;
+}
+.html_css_js {
+width: 395px;
+margin-top: 121px;
+}
+.info{
+    display: flex;
+    gap: 25px 304px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+h1{
+    font-size: 58px;
+    margin-bottom: 41px;
+}
+.A{
+    font-size: 27px;
+    max-width: 450px;
+    margin-top: 40px;
+    line-height: 37.8px;
+}
+.B{
+    font-size: 27px;
+    max-width: 450px;
+    margin-top: 20px;
+    line-height: 37.8px;
+}
+.C{
+    font-size: 27px;
+    max-width: 432px;
+    margin-top: 20px;
+    line-height: 37.8px;
+}
+.D{
+    font-size: 27px;
+    max-width: 477px;
+    margin-top: 20px;
+    line-height: 37.8px;
+}
+.h2{
+    margin-top: 20px;
+    margin-right: 101px;
+    max-height: 37px;
+}
