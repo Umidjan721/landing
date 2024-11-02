@@ -125,18 +125,24 @@ h4 {
     line-height: 118%;
     text-transform: uppercase;
   }
-  
-  #main {
+  #main{
     display: flex;
-    gap: 55px 90px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 52px 0;
   }
+  .miniMain{
+    display: flex;
+    gap: 30px 120px;
   
+  }
+  .miniMain div{
+    flex:1 1 400px
+  }
   h5 {
     font-size: calc(18px + (27 - 18) * ((100vw - 375px) / (1280 - 375)));
     font-weight: 600;
     line-height: 140%;
-    margin-bottom: 20px 35px;
+    margin-bottom: 20px;
     padding-right: 120px;
   }
   
@@ -145,3 +151,12 @@ h4 {
     font-weight: 400;
     line-height: 140%;
   }
+@media (max-width:1170px) {
+ .miniMain{
+  flex-direction: column;
+  
+ } 
+ .miniMain div{
+  flex-basis: auto;
+ }
+}
