@@ -1,6 +1,6 @@
 function calcTimer(){
     let today = new Date()
-    let saleDeadline = new Date(2024, 10, 3)
+    let saleDeadline = new Date(2024, 10, 5)
     let delta = (saleDeadline - today)/1000
     delta = Math.trunc(delta)
 
