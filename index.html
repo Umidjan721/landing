@@ -7,11 +7,17 @@
     <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.cdnfonts.com/css/chava" rel="stylesheet" />
     <title>landing</title>
+
+    <link rel="stylesheet" href="./splide-4.1.3/dist/css/splide-core.min.css">
+    <link rel="stylesheet" href="./splide-4.1.3/dist/css/themes/splide-default.min.css">
   </head>
   <body>
     <main>
       <section id="hello">
         <img src="./img/logo.svg" class="logo" alt="" />
+        <img src="./img/html_css_js 1.png" alt="">
+      </section>  
+      <section>  
         <h1>Этот курс для тебя, если ты...</h1>
         <div class="info">
           <div>
@@ -146,25 +152,21 @@
     
     <section class="program">
       <div class="programBorder">
+        <img src="./img/course-program-corner.svg" alt="corner" id="corner">
         <h2>Программа курса</h2>
         <ul class="lessons">
-          <li class="lessons">Урок №1: Знакомство с html, css, js и разница между ними</li>
-          <hr class="line">
-          <li class="lessons">Урок №2: Виды сайтов и первые термины</li>
-          <hr class="line">
-          <li class="lessons">Урок №3: CSS - базовые стили и их подключение. Палитра</li>
-          <hr class="line">
-          <li class="lessons">Урок №4: HTML [Таблицы]</li>
-          <hr class="line">
-          <li class="lessons">Урок №5: HTML [Формы]</li>
-          <hr class="line">
-          <li class="lessons">Урок №6: CSS [Intermediate]</li>
-          <hr class="line">
+          <li class="lesson">Урок №1: Знакомство с html, css, js и разница между ними</li>
+          <li class="lesson">Урок №2: Виды сайтов и первые термины</li>
+          <li class="lesson">Урок №3: CSS - базовые стили и их подключение. Палитра</li>
+          <li class="lesson">Урок №4: HTML [Таблицы]</li>
+          <li class="lesson">Урок №5: HTML [Формы]</li>
+          <li class="lesson">Урок №6: CSS [Intermediate]</li>
         </ul>
-        <button class="purplebg">Получить полную программу курса</button>
+        <button class="purplebg desktop">Получить полную программу курса</button>
       </div>
-      <button class="purplebg">Получить полную программу курса</button>
+      <button class="purplebg mobile">Получить полную программу курса</button>
     </section>
+
 
     <section>
       <h2>диплом об окончании курса</h2>
@@ -258,7 +260,81 @@
 
 
 
+    <section>
+      <h2 id="doubt">Все еще сомневаешься?</h2>
+      <p>Тогда последний козырь: после каждого выпуска мы устраиваем крутые вечеринки в честь вручения дипломов!</p>
+      <div class="gallery">
+       
+      </div>
+    </section>
+    <section class="splide" aria-label="Splide Basic HTML Example">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide"> <img src="./img/JM_photo_153.png" alt="">/li>
+          <li class="splide__slide"><img src="./img/Rectangle 76.png" alt=""></li>
+          <li class="splide__slide"><img src="./img/slider_image_02.png" alt=""></li>
+          <li class="splide__slide"><img src="./img/slider_image_03.png" alt=""></li>
+          <li class="splide__slide"><img src="./img/JM_photo_152.png" alt=""></li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="bidSection">
+      <div>
+        <h2>запишись на курс прямо сейчас!</h2>
+        <div class="imgSpan">
+          <img src="./img/Icon_keyboard.png" alt=""> 
+          <span class="htmlCssJs">html, css, js</span>
+        </div>
+        <div class="imgSpan">
+          <img src="./img/icon_game_bot.png" alt="">
+          <span>Разработка онлайн игр</span>
+        </div>
+        <div class="imgSpan">
+          <img src="./img/icon_database.png" alt="">
+          <span>Введение в Bootstrap и Github</span>
+        </div>
+      </div>
+      <div class="bid">
+        <img class="discount" src="./img/скидка.png" alt="">
+        <div >
+          <h4>оставь заявку</h4>
+          <span id="startLesson">начало обучения: 1 декабря</span>
+          <div class="input">
+            <input type="text" placeholder="Имя" required>
+          </div>
+          <div class="input" id="disappear">
+            <input type="text" placeholder="Фамилия" required>
+          </div>
+          <div class="input">
+            <input type="tel" placeholder="+998 ( ) ___-__-__">
+          </div>
+          <button>Записаться на курс</button>
+          <span id="solidVop">Остались вопросы?</span>
+            <span class="transperent">Звони: +998 33 135 33 55</span>
+            <span class="transperent">Наши консультанты доступны каждый день</span> 
+            <span class="transperent">с 10:00 до 22:00.</span>
+        </div>
+      </div>
+    </section>
+    
+
     </main>
     <script src="./script.js"></script>
+
+   <script src="./splide-4.1.3/dist/js/splide.min.js"></script>
+
+   <script>
+    document.addEventListener( 'DOMContentLoaded', function() {
+      var splide = new Splide( '.splide',{
+        type  : 'loop',
+        perPage: 2,
+        perMove: 1,
+        arrows: false
+      });
+      splide.mount();
+    } );
+  </script>
   </body>
 </html>
